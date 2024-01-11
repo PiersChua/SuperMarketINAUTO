@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>850.4,4418.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,4548.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -120,7 +120,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="820,4353.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="820,4484" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="stringSelections" />
       <Variable x:TypeArguments="x:String" Name="stringBrand" />
@@ -215,13 +215,13 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="757.6,1655.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.fairprice.com.sg/">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="757.6,1785.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.fairprice.com.sg/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="661.6,1529.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="661.6,1660" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -239,7 +239,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[stringSelections]" sap:VirtualizedContainerService.HintSize="599.2,1221.6" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[stringSelections]" sap:VirtualizedContainerService.HintSize="599.2,1352" sap2010:WorkflowViewState.IdRef="Switch`1_4">
               <Sequence x:Key="Beer" sap:VirtualizedContainerService.HintSize="559.2,988" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -524,7 +524,7 @@
                   </ui:BrowserScope>
                 </Sequence>
               </Sequence>
-              <Sequence x:Key="Drinks" sap:VirtualizedContainerService.HintSize="559.2,1369.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence x:Key="Drinks" sap:VirtualizedContainerService.HintSize="559.2,1118.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -620,7 +620,7 @@
                     </ui:Click.Target>
                   </ui:Click>
                 </Switch>
-                <Sequence DisplayName="Recording Sequence" sap:VirtualizedContainerService.HintSize="496.8,729.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence DisplayName="Recording Sequence" sap:VirtualizedContainerService.HintSize="496.8,478.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
                   </Sequence.Variables>
@@ -654,8 +654,6 @@
                       </ActivityAction>
                     </ui:BrowserScope.Body>
                   </ui:BrowserScope>
-                  <ui:OutputDataTable DataTable="[dt_FairPrice]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[Output]" />
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[Output]" TextWriter="{x:Null}" />
                 </Sequence>
               </Sequence>
             </Switch>
